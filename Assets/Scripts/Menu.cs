@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     //This function is used for playing the tutorial
     public void OnStart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
     }
 
     //Play button, Controls, and Credits all use this function
