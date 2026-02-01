@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
@@ -10,7 +11,7 @@ public class Menu : MonoBehaviour
     //This function is used for playing the tutorial
     public void OnStart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     //Play button, Controls, and Credits all use this function
@@ -30,6 +31,6 @@ public class Menu : MonoBehaviour
     //This function skips the tutorial scene
     public void OnSkip()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.sceneCount + 2);
     }
 }

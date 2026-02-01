@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 0ebb71f814906ea4aad77348d75d9e95
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/TutorialBallroom.unity
+    guid: e8dc5a5c0503f344b9b4b4f38b756312
+  - enabled: 1
+    path: Assets/Scenes/BallRoomLvl1.unity
+    guid: d45590b86b232554ab4fce7cc2209076
+  - enabled: 1
+    path: Assets/Scenes/BallRoomLvl2.unity
+    guid: 4a97306db211e044d83928bf8269b7b4
+  - enabled: 1
+    path: Assets/Scenes/BallRoomLvl3.unity
+    guid: e391ec9292cd51e4fb0697e9914512a7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

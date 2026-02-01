@@ -17,10 +17,12 @@ public class PasswordSystem : MonoBehaviour
     public GameObject player;
     private ReputationSystem _rep;
     public bool _canPause;
+    public GameObject nextLevelTrigger;
 
     //The text objects, which will change throughout the thing.
     public TextMeshProUGUI _sequenceText;
     public TextMeshProUGUI _displayText;
+    public GameObject _gameWindow;
 
     //THe privates for the in game stuff
     private bool _isTurn = false;
@@ -109,6 +111,7 @@ public class PasswordSystem : MonoBehaviour
                 Debug.Log("Player completed the sequence!");
                 _rep.HealRepuation();
                 _isTurn = false;
+                _gameWindow.SetActive(false);
 
             }
         }
@@ -171,6 +174,12 @@ public class PasswordSystem : MonoBehaviour
             return;
         }
 
+    }
+
+    public void OnActive()
+    {
+        _gameWindow.SetActive(true);
+        nextLevelTrigger.SetActive(true);
     }
 
 }
